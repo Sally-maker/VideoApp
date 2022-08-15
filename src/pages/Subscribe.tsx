@@ -28,14 +28,14 @@ export function Subscribe(){
 
     return (
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-            <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
-                <div className="max-w-[640px]">
-                    <Logo />
+            <div className="w-full max-w-[425px] flex flex-col items-center justify-between mt-20 mx-auto sm:items-center">
+                <div className="max-w-[425px] flex flex-col items-center ">
+                    <Logo/>
 
-                    <h1 className="mt-8 text-[2.5rem] leading-tight">
+                    <h1 className="mt-8 text-[1.7rem] leading-tight">
                         Contrua uma <strong className="text-blue-500">evolução foda</strong>
                     </h1>
-                    <p className="mt-4 text-gray-200 leading-relaxed">
+                    <p className="mt-4 text-gray-200 leading-relaxed mb-9">
                         O peso do mundo eu <strong className="text-blue-500">tenho que suportar</strong>
                     </p>
                 </div>
