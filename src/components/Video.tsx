@@ -1,5 +1,5 @@
 import { Player, Youtube , DefaultUi } from '@vime/react';
-import { DiscordLogo, Lightning, List} from "phosphor-react";
+import { DiscordLogo, Lightning } from "phosphor-react";
 import '@vime/core/themes/default.css'
 import { useGetLessonBySlugQuery } from '../graphql/generated';
 
@@ -24,7 +24,7 @@ export function Video(props: VideoProps) {
     return (
         <div className="flex-1">
             <div className="bg-black flex justify-center">
-                <div className="h-full w-full max-w-[425px] max-h-[60vh] aspect-video">
+                <div className="h-full w-full max-w-[425px] max-h-[50vh] aspect-video">
                     <Player>
                          <Youtube videoId={data.lesson.videoId}/>
                          <DefaultUi/>

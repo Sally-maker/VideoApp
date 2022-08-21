@@ -3,6 +3,8 @@ import { Event } from './pages/Event'
 import { Subscribe } from './pages/Subscribe'
 
 export function Router() {
+
+
     return (
         <Routes>
             <Route path='/' element={<Subscribe/>}/>

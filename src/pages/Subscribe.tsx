@@ -1,6 +1,5 @@
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Logo } from "../components/Logo";
 import { useCreateSubsMutation } from "../graphql/generated";
 
 
@@ -29,14 +28,14 @@ export function Subscribe(){
     return (
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
             <div className="w-full max-w-[425px] flex flex-col items-center justify-between mt-20 mx-auto sm:items-center">
-                <div className="max-w-[425px] flex flex-col items-center ">
-                    <Logo/>
-
+              <div className="max-w-[425px] flex flex-col items-center ">
+               <img src="/src/assets/Logo.png" alt="" className="h-20 rounded-2xl" />
+                    
                     <h1 className="mt-8 text-[1.7rem] leading-tight">
-                        Contrua uma <strong className="text-blue-500">evolução foda</strong>
+                        Contrua uma <strong className="text-orange-500">evolução foda</strong>
                     </h1>
                     <p className="mt-4 text-gray-200 leading-relaxed mb-9">
-                        O peso do mundo eu <strong className="text-blue-500">tenho que suportar</strong>
+                        O peso do mundo eu <strong className="text-orange-500">tenho que suportar</strong>
                     </p>
                 </div>
 
@@ -59,7 +58,7 @@ export function Subscribe(){
                         <button
                           type="submit"
                           disabled={loading}
-                          className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                          className="mt-4 bg-orange-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
                         >
                           Cadastre-se
                         </button>
