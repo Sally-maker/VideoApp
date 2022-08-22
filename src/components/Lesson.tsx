@@ -21,8 +21,8 @@ export function Lesson(props: ILessonType) {
               {dateFormat}
             </span>
              
-            <div className={classeNames(`rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500`,{
-                'bg-green-500': isActive
+            <div className={classeNames(`rounded border border-gray-500 p-4 mt-2 group-hover:border-orange-500`,{
+                'bg-orange-500 ring-opacity-50': isActive
             })}>
                 <header className="flex items-center justify-between">
                     {isAvailable ? (
@@ -39,7 +39,7 @@ export function Lesson(props: ILessonType) {
                         Em breve
                        </span>
                     )}
-                    <span className="text-xs rounded py-[0.125rem] px-2 text-white border border-green-300 font-bold">
+                    <span className="text-xs rounded py-[0.125rem] px-2 text-white border border-white font-bold">
                         {props.type === "class" ? "AULA PRÁTICA" : "AO VIVO"}
                     </span>
                 </header>

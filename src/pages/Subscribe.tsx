@@ -32,10 +32,10 @@ export function Subscribe(){
                <img src="/src/assets/Logo.png" alt="" className="h-20 rounded-2xl" />
                     
                     <h1 className="mt-8 text-[1.7rem] leading-tight">
-                        Contrua uma <strong className="text-orange-500">evolução foda</strong>
+                      Radio Nações <strong className="text-blue-900">Sempre com você</strong>
                     </h1>
                     <p className="mt-4 text-gray-200 leading-relaxed mb-9">
-                        O peso do mundo eu <strong className="text-orange-500">tenho que suportar</strong>
+                        Entregando entreterimento e <strong className="text-blue-900">diversão musical para todos</strong>
                     </p>
                 </div>
 
@@ -58,7 +58,7 @@ export function Subscribe(){
                         <button
                           type="submit"
                           disabled={loading}
-                          className="mt-4 bg-orange-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                          className="mt-4 bg-orange-500 uppercase py-4 rounded font-bold text-sm hover:bg-orange-700 transition-colors disabled:opacity-50"
                         >
                           Cadastre-se
                         </button>
