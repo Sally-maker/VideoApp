@@ -29,7 +29,7 @@ export function Subscribe(){
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
             <div className="w-full max-w-[425px] flex flex-col items-center justify-between mt-20 mx-auto sm:items-center">
               <div className="max-w-[425px] flex flex-col items-center ">
-               <img src={require('./src/assets/logo.png')} alt="" className="h-20 rounded-2xl" />
+               <img src='./src/assets/logo.png' alt="" className="h-20 rounded-2xl" />
                     
                     <h1 className="mt-8 text-[1.7rem] leading-tight">
                       Radio Nações <strong className="text-blue-900">Sempre com você</strong>
