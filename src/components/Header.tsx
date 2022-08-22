@@ -7,7 +7,7 @@ export function Header() {
     return (
        <header className="max-w-[425px] py-5 bg-gray-700 border-b flex flex-col border-gray-600 p-4 pl-5">
          <div className="max-w-full flex justify-end ">
-           <img src={require('/src/assets/logo.png')} alt="" className="h-12 rounded-2xl" />
+           <img src={require('./src/assets/logo.png')} alt="" className="h-12 rounded-2xl" />
          </div>
            <>
               <nav className={`max-w-[425px]`}>
