@@ -1,13 +1,14 @@
 import { List, X } from "phosphor-react";
 import { useContext } from "react";
 import { ToggleContext } from "../contexts/ToggleContext";
+import img from '../assets/Logo.png'
 
 export function Header() {
  const {isOpenToggle, setIsOpenToggle} =  useContext(ToggleContext)
     return (
        <header className="max-w-[425px] py-5 bg-gray-700 border-b flex flex-col border-gray-600 p-4 pl-5">
          <div className="max-w-full flex justify-end ">
-           <img src='./src/assets/logo.png' alt="" className="h-12 rounded-2xl" />
+           <img src={img} alt="" className="h-12 rounded-2xl" />
          </div>
            <>
               <nav className={`max-w-[425px]`}>
