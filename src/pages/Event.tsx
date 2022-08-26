@@ -10,7 +10,7 @@ export function Event() {
   const { slug } = useParams<{slug: string}>()
 
   const {isOpenToggle} = useContext(ToggleContext)
-   
+
     return (
         <div className="">
           { isOpenToggle ? (
@@ -24,11 +24,12 @@ export function Event() {
           </main>
             </>
           ): (
-            <>
+            <div className="">
             <Header/>
             <SideBar/>
-            </>
+           </div>
           )}
+          
         </div>
     )
 }
