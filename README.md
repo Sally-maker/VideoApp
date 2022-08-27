@@ -7,6 +7,16 @@
 <p>This project is focused in shared podcasts and reacts about music world, and our recorded interviews with people that would like shared yours talents. And if you wanted know more about us. Look at our <a href= "https://www.instagram.com/radionacoes.20/" underline >Instagram</a></p>
 
 
-<h2>Get Started</h2>
+<h2>Get Started 💻</h2>
   
-<p>For started just writtig 👇🏽</p>
+<p>For started just writtig 👇🏽</p> 
+
+~~~javascript
+npm i
+~~~
+~~~javascript
+npm run dev
+~~~
+
+<h2>Contributing ☕</h2>
+ <p>Thanks for your interest in contributing to LocalStack! We are always looking for new ways to improve the experience for developers and users. We welcome feedback, bug reports, and feature requests from the community!</p>
