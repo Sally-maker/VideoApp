@@ -24,7 +24,6 @@ export function Subscribe(){
        navigate('/event')
     }
 
-
     return (
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
             <div className="w-full sm:[425px] flex flex-col items-center mt-20 mx-auto lg:flex-row justify-between p-20">
