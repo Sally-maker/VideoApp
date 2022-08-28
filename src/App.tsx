@@ -6,7 +6,6 @@ import { Router } from "./Router"
 
 function App() {
  
-
   return (
     <ApolloProvider client={client}>
       <ToggleContextProvider>
