@@ -4,7 +4,6 @@ import { Subscribe } from './pages/Subscribe'
 
 export function Router() {
 
-
     return (
         <Routes>
             <Route path='/' element={<Subscribe/>}/>
