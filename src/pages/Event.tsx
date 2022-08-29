@@ -1,4 +1,3 @@
-import { Sidebar } from "phosphor-react";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Header } from "../components/Header";
@@ -8,6 +7,8 @@ import { ToggleContext } from "../contexts/ToggleContext";
 
 export function Event() {
   const { slug } = useParams<{slug: string}>()
+
+  const viewport = screen.width
 
   const {isOpenToggle} = useContext(ToggleContext)
 
@@ -23,13 +24,21 @@ export function Event() {
             } 
           </main>
             </>
-          ): (
-            <div className="">
-            <Header/>
-            <SideBar/>
-           </div>
+          ) : (
+            <main>
+            {viewport > 425 ? (
+              <div className="flex">
+              <Video lessonSlug={slug}/>
+              <SideBar/>
+              </div>
+            ) : (
+              <div>
+                 <Header/>
+                 <SideBar/>
+              </div>
+            )}
+            </main>
           )}
-          
         </div>
     )
 }

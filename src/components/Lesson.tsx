@@ -45,8 +45,8 @@ export function Lesson(props: ILessonType) {
                         Em breve
                        </span>
                     )}
-                    <span className="text-xs rounded py-[0.125rem] px-2 text-white border border-white font-bold">
-                        {props.type === "class" ? "AULA PRÁTICA" : "AO VIVO"}
+                    <span className="text-xs rounded py-[0.125rem] px-2 text-white border border-white font-bold ml-24">
+                        {props.type === "class" ? "GRAVAÇÕES" : "AO VIVO"}
                     </span>
                 </button>
 
