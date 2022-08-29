@@ -2,6 +2,10 @@ import { CheckCircle, Lock } from 'phosphor-react'
 import { isPast, format } from 'date-fns'
 import { Link, useParams } from 'react-router-dom';
 import classeNames from 'classnames'
+import { FormEvent, useContext } from 'react';
+import { Video } from './Video';
+import { ToggleContext } from '../contexts/ToggleContext';
+
 interface ILessonType {
     title: string;
     slug: string;
@@ -10,8 +14,10 @@ interface ILessonType {
 }
 
 export function Lesson(props: ILessonType) {
+
     const { slug } = useParams<{slug: string}>()
     const isAvailable = isPast(props.isAvaiableAt)
+    const {isOpenToggle, setIsOpenToggle} = useContext(ToggleContext)
     const dateFormat = format(props.isAvaiableAt, "EEEE' • ' d ' de 'MMMM' • 'k'h'mm")
 
     const isActive = slug === props.slug
@@ -24,7 +30,7 @@ export function Lesson(props: ILessonType) {
             <div className={classeNames(`rounded border border-gray-500 p-4 mt-2 group-hover:border-orange-500`,{
                 'bg-orange-500 ring-opacity-50': isActive
             })}>
-                <header className="flex items-center justify-between">
+                <button onClick={() => setIsOpenToggle(!isOpenToggle)} className="flex items-center justify-between">
                     {isAvailable ? (
                         <span className={classeNames("text-sm text-blue-500 font-medium flex gap-2 items-center", {
                             'text-white': isActive,
@@ -42,7 +48,7 @@ export function Lesson(props: ILessonType) {
                     <span className="text-xs rounded py-[0.125rem] px-2 text-white border border-white font-bold">
                         {props.type === "class" ? "AULA PRÁTICA" : "AO VIVO"}
                     </span>
-                </header>
+                </button>
 
                 <strong className={classeNames('mt-5 block', {
                     'text-white': isActive,
