@@ -13,7 +13,7 @@ export function Event() {
   const {isOpenToggle} = useContext(ToggleContext)
 
     return (
-        <div className="">
+        <div className="  ">
           { isOpenToggle ? (
             <>
             <Header/> 
