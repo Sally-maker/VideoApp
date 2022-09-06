@@ -57,7 +57,7 @@ export function Subscribe(){
                         <button
                           type="submit"
                           disabled={loading}
-                          className="mt-4 bg-orange-500 uppercase py-4 rounded font-bold text-sm hover:bg-orange-700 transition-colors disabled:opacity-50"
+                          className="mt-4 bg-orange-500 uppercase py-4 rounded font-bold text-sm hover:bg-orange-600 transition-colors disabled:opacity-50"
                         >
                           Cadastre-se
                         </button>
