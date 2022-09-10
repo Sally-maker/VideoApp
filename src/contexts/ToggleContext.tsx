@@ -17,6 +17,7 @@ const initialValue = {
 export const ToggleContext = createContext<ToggleContextType>(initialValue)
 
 export const ToggleContextProvider = ({ children }:ToggleContextProps) => {
+
    const [isOpenToggle, setIsOpenToggle] = useState(initialValue.isOpenToggle)
 
   return (

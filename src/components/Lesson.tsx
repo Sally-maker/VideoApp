@@ -2,8 +2,7 @@ import { CheckCircle, Lock } from 'phosphor-react'
 import { isPast, format } from 'date-fns'
 import { Link, useParams } from 'react-router-dom';
 import classeNames from 'classnames'
-import { FormEvent, useContext } from 'react';
-import { Video } from './Video';
+import { useContext } from 'react';
 import { ToggleContext } from '../contexts/ToggleContext';
 
 interface ILessonType {

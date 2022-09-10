@@ -8,37 +8,31 @@ import { ToggleContext } from "../contexts/ToggleContext";
 export function Event() {
   const { slug } = useParams<{slug: string}>()
 
-  const viewport = screen.width
-
   const {isOpenToggle} = useContext(ToggleContext)
 
     return (
-        <div className="  ">
-          { isOpenToggle ? (
-            <>
-            <Header/> 
-          <main className="flex flex-1">
-            { slug 
-              ? <Video lessonSlug={slug}/> 
-              : <div className="flex-1"/>
-            } 
-          </main>
-            </>
-          ) : (
-            <main>
-            {viewport > 425 ? (
-              <div className="flex">
-              <Video lessonSlug={slug}/>
-              <SideBar/>
-              </div>
-            ) : (
-              <div>
-                 <Header/>
-                 <SideBar/>
-              </div>
-            )}
-            </main>
-          )}
+      <div className="">
+      { isOpenToggle ? (
+        <>
+      <main className="">
+        <Header/>
+        <div className="lg:flex">
+        { slug 
+          ? <Video lessonSlug={slug}/> 
+          : <div className="flex-1"/>
+        }
+        <SideBar/>
         </div>
-    )
+      </main>
+        </>
+      ) : (
+        <main>
+          <div className="">
+          <Header/> 
+          <SideBar/>
+          </div>
+        </main>
+      )}
+    </div>
+    ) 
 }

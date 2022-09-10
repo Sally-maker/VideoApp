@@ -15,14 +15,14 @@ export function Video(props: VideoProps) {
   })
   if(!data || !data.lesson){
     return (
-      <div className='justify-between items-center'>
-        <p>Carregando...</p>
+      <div className='justify-center items-center flex-1'>
+        <p className=''>Carregando...</p>
       </div>
     )
   }
 
     return (
-        <div className="flex-1">
+        <div className="flex-1 lg:w-full">
             <div className="bg-black flex justify-center">
                 <div className="h-full w-full sm:[425px] max-h-[50vh] aspect-video">
                     <Player>
