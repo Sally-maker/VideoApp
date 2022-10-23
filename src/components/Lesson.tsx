@@ -2,8 +2,7 @@ import { CheckCircle, Lock } from 'phosphor-react'
 import { isPast, format } from 'date-fns'
 import { Link, useParams } from 'react-router-dom';
 import classeNames from 'classnames'
-import { useContext } from 'react';
-import { ToggleContext } from '../contexts/ToggleContext';
+import { useContext, useState } from 'react';
 
 interface ILessonType {
     title: string;
@@ -14,9 +13,11 @@ interface ILessonType {
 
 export function Lesson(props: ILessonType) {
 
+   const [isOpenToggle, setIsOpenToggle] = useState(false)
+
+
     const { slug } = useParams<{slug: string}>()
     const isAvailable = isPast(props.isAvaiableAt)
-    const {isOpenToggle, setIsOpenToggle} = useContext(ToggleContext)
     const dateFormat = format(props.isAvaiableAt, "EEEE' • ' d ' de 'MMMM' • 'k'h'mm")
 
     const isActive = slug === props.slug

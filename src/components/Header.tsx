@@ -1,12 +1,11 @@
 import { List, X } from "phosphor-react";
-import { useContext, useEffect } from "react";
-import { ToggleContext } from "../contexts/ToggleContext";
+import { useContext, useEffect, useState } from "react";
 import img from '../assets/Logo.png'
+
 
 export function Header() {
 
-
-  const {isOpenToggle, setIsOpenToggle} =  useContext(ToggleContext)
+   const [isOpenToggle, setIsOpenToggle] = useState(false)
 
 
     return (
@@ -17,7 +16,6 @@ export function Header() {
            <>
               <nav className={`max-w-[640px]`}>
                 <button  onClick={() => setIsOpenToggle(!isOpenToggle)} className={`flex justify-start items-center duration-500`}>
-                    {isOpenToggle ? <List size={24}/> : <X size={24}/>}
                 </button>
               </nav>
            </>

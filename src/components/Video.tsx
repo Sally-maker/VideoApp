@@ -22,7 +22,7 @@ export function Video(props: VideoProps) {
   }
 
     return (
-        <div className="flex-1 lg:w-full mb-96">
+        <div className="flex-1 lg:w-full ">
             <div className="bg-black flex justify-center">
                 <div className="h-full w-full sm:[425px] max-h-[50vh] aspect-video">
                     <Player>
